@@ -1,10 +1,10 @@
-# DIT637-TT07
+# MLfun
 
 ## Run Machine Learning Operations (MLOps) Tracking Server
 1. Open New Terminal
 2. `cd mlops-mlflow`
 3. `pip install -r requirements`
-4. `mlflow server --host 127.0.0.1 --port 8080`
+4. `mlflow server`
 
 ## Run Machine Learning Models
 1. Create `.env` file inside `mlops-mlfow` (use `example.env` as reference)
@@ -39,12 +39,3 @@ Note: It will run the following Python scripts
 6. Make the Port Visibility `Public`
 7. Copy the forwarded address FastAPI
 
-## Run Frontend React Native in the Mobile/Browser
-1. Create `.env` file and paste the following: (use `example.env` as reference)
-- paste the forwarded address ExpressJS after  `API_URL_SEARCH=`
-- paste the forwarded address FastAPI after `API_URL_RECOMMEND=`
-2. Open New Terminal
-3. `cd frontend-reactnative`
-4. `npm install`
-5. `npx expo login`
-6. `npx expo start --tunnel` OR in the web `npx expo start --web`
